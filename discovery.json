@@ -1,0 +1,30 @@
+{
+  "lookbackDays": 8,
+  "maximumNewCases": 12,
+  "maximumArchiveCases": 48,
+  "minimumScore": 68,
+  "minimumFootageScore": 64,
+  "googleNewsQueries": [
+    "(misterio OR desaparición OR rescate) (vídeo OR CCTV OR grabación OR imágenes)",
+    "(mystery OR missing OR rescue) (footage OR CCTV OR bodycam OR video)",
+    "(survivor OR survival OR disaster) (caught on camera OR footage)",
+    "(strange case OR disturbing incident OR unexplained) video"
+  ],
+  "gdeltQueries": [
+    "(missing OR mystery OR rescue) (CCTV OR footage OR bodycam)",
+    "(survivor OR disaster OR unexplained) video"
+  ],
+  "redditCommunities": [
+    "UnresolvedMysteries",
+    "nonmurdermysteries",
+    "TrueCrimeDiscussion",
+    "CatastrophicFailure",
+    "Survival"
+  ],
+  "youtubeQueries": [
+    "mystery CCTV case",
+    "missing person footage",
+    "survival rescue caught on camera",
+    "disturbing incident footage"
+  ]
+}

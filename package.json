@@ -1,0 +1,16 @@
+{
+  "name": "horrortales-story-intelligence",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-standalone.mjs",
+    "discover": "node scripts/discover-weekly.mjs",
+    "editorial:sync": "node scripts/sync-editorial.mjs",
+    "editorial:check": "node scripts/sync-editorial.mjs --check",
+    "check": "node --check app.js && node --check scripts/build-standalone.mjs && node --check scripts/sync-editorial.mjs && node scripts/sync-editorial.mjs --check && node scripts/discover-weekly.mjs --check"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,27 @@
+HORRORTALES — CÓMO ABRIRLO
+==========================
+
+PARA BUSCAR CASOS Y CREAR GUIONES SIN API
+1. Abre esta carpeta completa en Codex o Visual Studio Code.
+2. Escribe: "Lee AGENTS.md y dime qué puedo hacer con HorrorTales".
+3. Usa los ejemplos de COMANDOS.md.
+4. Codex guardará investigaciones y guiones dentro de esta carpeta.
+
+El botón "Crear guion con Codex" del dashboard copia una petición lista para pegar en el chat.
+
+OPCIÓN RÁPIDA
+Abre "horrortales.html". Este archivo contiene el diseño, los casos y la aplicación completa.
+Funciona con doble clic, incluso si Windows lo abre desde el ZIP.
+
+OPCIÓN RECOMENDADA PARA TRABAJAR
+1. Haz clic derecho sobre el ZIP.
+2. Selecciona "Extraer todo...".
+3. Entra en la carpeta extraída.
+4. Abre "index.html".
+
+IMPORTANTE
+No abras "index.html" directamente dentro del ZIP: Windows puede extraer solamente ese archivo
+y dejar fuera los estilos, la aplicación y los datos.
+
+La versión que se actualiza automáticamente cada viernes será la publicada en GitHub Pages.
+El archivo local es una copia y no recibe actualizaciones por sí solo.

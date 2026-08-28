@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HorrorTales: descubre historias con potencial para Shorts y conviértelas en guiones." />
+    <title>HorrorTales — Story intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="brand-mark">✦</span><span>Horror<span class="muted">Tales</span></span></div>
+        <div class="workspace-label">WORKSPACE <span class="status-dot"></span></div>
+        <nav>
+          <button class="nav-item active" data-view="discover"><span>◌</span> Descubrir</button>
+          <button class="nav-item" data-view="saved"><span>☆</span> Guardadas <b id="savedCount">0</b></button>
+          <button class="nav-item" data-view="scripts"><span>▤</span> Guiones</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="team-card"><div class="avatar-stack"><i>AM</i><i>LG</i></div><div><strong>Equipo HorrorTales</strong><small>2 colaboradores</small></div><span>⋯</span></div>
+          <div class="sidebar-link">⚙ Ajustes</div>
+          <div class="sidebar-link">? Guía rápida</div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb">HorrorTales <span>/</span> <strong>Descubrir historias</strong></div><div class="top-actions"><button class="icon-button" title="Notificaciones">♧<em></em></button><div class="user-avatar">AM</div></div></header>
+        <section class="page-head"><div><div class="eyebrow">STORY INTELLIGENCE <span>Beta</span><span>Casos reales verificados</span></div><h1>Encuentra historias<br /><em>imposibles de soltar.</em></h1><p class="lede">Explora casos reales con potencial narrativo, nombre identificable y señales de footage verificable.</p></div><button class="primary-button" id="newSearch">＋ Nueva búsqueda</button></section>
+
+        <section class="search-card">
+          <div class="search-row"><div class="search-input-wrap"><span>⌕</span><input id="searchInput" placeholder="Busca un tema, caso o lugar..." /></div><button class="primary-button small" id="searchButton">Buscar historias <span>→</span></button></div>
+          <div class="filter-row"><label>Tipo <select id="typeFilter"><option value="all">Todos los tipos</option><option>Misterio</option><option>Crimen</option><option>Desaparición</option><option>Supervivencia</option><option>Perturbador</option></select></label><label>Footage mínimo <select id="footageFilter"><option value="0">Cualquier disponibilidad</option><option value="70">70+ / 100</option><option value="85">85+ / 100</option></select></label><label>Ordenar por <select id="sortFilter"><option value="score">Score total</option><option value="footage">Footage</option><option value="recent">Más reciente</option></select></label><button class="filter-reset" id="resetFilters">Limpiar filtros</button></div>
+        </section>
+
+        <div class="section-bar"><div><h2 id="resultsTitle">Historias con potencial</h2><p id="resultsMeta">21 historias reales · dataset curado</p></div><div class="view-toggle"><button class="selected">▦</button><button>☷</button></div></div>
+        <section class="story-grid" id="storyGrid"></section>
+
+        <section class="empty-state hidden" id="emptyState"><div class="empty-icon">⌕</div><h3>No encontramos esa historia</h3><p>Prueba con otra palabra o elimina algún filtro.</p></section>
+      </main>
+    </div>
+
+    <div class="modal-backdrop hidden" id="storyModal"><div class="modal story-modal"><button class="close-modal" data-close>×</button><div id="modalContent"></div></div></div>
+    <div class="modal-backdrop hidden" id="scriptModal"><div class="modal script-modal"><button class="close-modal" data-close>×</button><div class="eyebrow">SCRIPT LAB <span>Flujo con Codex</span></div><div id="scriptContent"></div></div></div>
+    <div class="toast hidden" id="toast"></div>
+    <script src="data/editorial-cases.js"></script>
+    <script src="data/weekly-cases.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
