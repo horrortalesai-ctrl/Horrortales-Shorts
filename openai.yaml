@@ -1,0 +1,5 @@
+interface:
+  display_name: "HorrorTales Editorial"
+  short_description: "Investiga casos y escribe guiones virales"
+  default_prompt: "Usa $horrortales-editorial para ejecutar la actualización semanal de casos."
+
